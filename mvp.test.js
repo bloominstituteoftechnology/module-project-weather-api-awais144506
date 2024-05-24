@@ -68,7 +68,7 @@ beforeEach(async () => {
   await moduleProject4()
 })
 
-describe('Module 4 Project', () => {
+describe.only('Module 4 Project', () => {
   test('👉 [1] div#weatherWidget not visible on first render', () => {
     expect(screen.queryByText('Feels like')).not.toBeVisible()
   })
